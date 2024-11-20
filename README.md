@@ -1,4 +1,4 @@
-#Problem-Solving with Algorithms - Level 2
+# Problem-Solving with Algorithms - Level 2
 
 This repository contains solutions to 50 algorithm challenges written in C++. These challenges are part of the "Algorithms and Problem Solving" course taught by Dr. Mohammed Abu-Hadhoud.
 
