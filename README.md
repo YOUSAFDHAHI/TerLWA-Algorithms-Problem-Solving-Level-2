@@ -5,8 +5,11 @@
 ## Fucus on:
 
 Clean code.
+
 Divide and conquer by complex problems into manageable functions.
+
 with organizing code into libraries.
+
 Reusability.
 
   The goal of this course to improve your skills on problem solving and alogrithm.
