@@ -226,11 +226,26 @@ public:
     static short minNumberInArray(int arr[100], short length)
     {
         short min = 100;
-        for (short i = 1; i < length; i++)
+        for (short i = 0; i < length; i++)
         {
             if (arr[i] < min)
                 min = arr[i];
         }
         return min;
     }
+    static short sumOfArray(int arr[100], short length)
+    {
+        int sum = 0;
+        for (short i = 0; i < length; i++)
+        {
+            sum += arr[i];
+        }
+        return sum;
+    }
+        static short avgOfArray(int arr[100], short length)
+{
+    short avg = sumOfArray(arr, length) / length;
+    return avg;
+}
+    
 };
