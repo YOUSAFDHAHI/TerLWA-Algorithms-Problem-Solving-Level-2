@@ -150,5 +150,29 @@ public:
         {
             return (num == reverseNumber(num));
         }
+        static void printInvertedNumberPattern(int num)
+        {
+            for (short i = num; i >= 1;i--)
+            {
+                cout << endl;
+                for (short j = 1; j <= i;j++)
+                {
+                    cout << i;
+                }
+                
+            }
+        }
+        static void printNumberPattern(int num)
+        {
+            for (short i = 1; i <= num;i++)
+            {
+                cout << endl;
+                for (short j = 1; j <= i;j++)
+                {
+                    cout << i;
+                }
+            }
+        }
+
 
 };
