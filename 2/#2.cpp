@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    short num = clsNumbers::readPositiveNumber();
+    int num = clsNumbers::readPositiveNumber();
     cout << "\n";
     cout << "Prime Numbers from " << 1 << " To " << num;
     cout << " are : " << endl;

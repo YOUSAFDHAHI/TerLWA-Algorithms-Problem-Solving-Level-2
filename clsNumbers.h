@@ -8,12 +8,12 @@ using namespace std;
 class clsNumbers
 {
 public:
-    static short readPositiveNumber()
+    static int readPositiveNumber(string message = "\nPlease enter a Positive Number: ")
     {
-        short num = 0;
+        int num = 0;
         do
         {
-            cout << "\nPlease enter a Positive Number: ";
+            cout << message;
             cin >> num;
         } while (num <= 0);
         return num;
@@ -105,4 +105,50 @@ public:
         }
         return sum;
     }
+    static int reverseNumber(int num1)
+    {
+        short reminder = 0;
+        short num2 = 0;
+
+        while(num1 > 0)
+        {
+            reminder = num1 % 10;
+            num1 = num1 / 10;
+            num2 = num2 * 10 + reminder;
+        }
+        return num2;
+    }
+    static short countDigitFrequency(int num,short digitToCheck)
+    {
+        short reminder = 0;
+        short freqCount = 0;
+        while (num > 0)
+        {
+
+            reminder = num % 10;
+            if(reminder == digitToCheck)
+                freqCount++;
+            num = num / 10;
+        }
+        return freqCount;
+    }
+        static void printAllDigitFrequency(int num)
+        {
+            for (short i = 1; i <= 10;i++)
+            {
+                if(countDigitFrequency(num, i) > 0)
+                cout << "Digit " << i << " Frequency is " << countDigitFrequency(num, i)
+                     << " Time(s)" << endl;
+            }
+        }
+        static void printAllDigitInOrder(int num)
+        {
+            num = reverseNumber(num);
+            printDigits(num);
+        }
+        static bool isPalindromeNumber(int num)
+        {
+            return (num == reverseNumber(num));
+        }
+
 };

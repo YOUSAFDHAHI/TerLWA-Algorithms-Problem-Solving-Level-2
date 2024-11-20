@@ -3,6 +3,6 @@
 using namespace std;
 int main()
 {
-    int num = clsNumbers::readPositiveNumber();
-    cout << "\nSum Of Digits = " << clsNumbers::sumOfDigits(num);
+    int num = clsNumbers::readPositiveNumber("Please enter the main number? ");
+    clsNumbers::printAllDigitInOrder(num);
 }

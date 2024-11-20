@@ -4,5 +4,5 @@ using namespace std;
 int main()
 {
     int num = clsNumbers::readPositiveNumber();
-    cout << "\nSum Of Digits = " << clsNumbers::sumOfDigits(num);
+    cout << clsNumbers::reverseNumber(num);
 }
