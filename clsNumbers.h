@@ -174,5 +174,11 @@ public:
             }
         }
 
+        static short getRandomNumber(short from,short to)
+        {
+            int randNum = rand() % (to - from + 1) + from;
+            return randNum;
+        }
+
 
 };
