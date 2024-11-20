@@ -27,5 +27,25 @@ class clsString
             text[i] = char((int)text[i] - encryptionKey);        }
         return text;
     }
+    static string genrateToken()
+    {
+        string token = "";
+        for (short i = 0; i < 4;i++)
+        {
+            token += clsChar::GetRandomCharacter(clsChar::enCharType::capitalLetter);
+        }
+        return token;
+    }
+    static string genrateFullToken()
+    {
+        string fullToken = "";
+        for (short i = 0; i < 4;i++)
+        {
+            fullToken += genrateToken();
+            if(!(i == 3))
+            fullToken += "-";
+        }
+        return fullToken;
+    }
     
 };
