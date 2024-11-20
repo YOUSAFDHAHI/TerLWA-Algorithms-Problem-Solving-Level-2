@@ -7,9 +7,13 @@ int main()
 {
     srand((unsigned)time(NULL));
 
-    short length = clsNumbers::readPositiveNumber("\nEnter a length of array? ");
-    int arr[100];
-    clsNumbers::fillArrayWithRandomNumber(arr, length);
-    clsNumbers::printArray(arr, length);
-    cout << "Max Number is: " << clsNumbers::maxNumberInArray(arr, length);
+    short lengthArr1 = clsNumbers::readPositiveNumber("\nEnter a length of array? ");
+    int arr1[100], arr2[100];
+    short lengthArr2 = 0;
+    clsNumbers::fillArrayWithRandomNumber(arr1, lengthArr1);
+    cout << "\nArray 1 elements: " << endl;
+    clsNumbers::printArray(arr1, lengthArr1);
+    clsNumbers::copyPrimeNumberInArray(arr1, arr2, lengthArr1, lengthArr2);
+    cout << "\nArray 2 elements after copy: " << endl;
+    clsNumbers::printArray(arr2, lengthArr2);
 }

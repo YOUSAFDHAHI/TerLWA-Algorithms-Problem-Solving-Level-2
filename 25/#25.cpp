@@ -11,5 +11,5 @@ int main()
     int arr[100];
     clsNumbers::fillArrayWithRandomNumber(arr, length);
     clsNumbers::printArray(arr, length);
-    cout << "Max Number is: " << clsNumbers::minNumberInArray(arr, length);
+    cout << "Min Number is: " << clsNumbers::minNumberInArray(arr, length);
 }

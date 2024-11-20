@@ -23,7 +23,7 @@ public:
         Prime = 1,
         NotPrime = 2
     };
-    static enPrimeOrNot checkPrimeOrNot(short num)
+    static enPrimeOrNot checkPrimeOrNot(int num)
     {
         short halfOfNumber = num / 2;
         for (short i = 2; i <= halfOfNumber; i++)
@@ -190,7 +190,6 @@ public:
     }
     static void printArray(int arr[100], short length)
     {
-        // cout << "\nOriginal array: ";
         for (short i = 0; i < length; i++)
         {
             cout << arr[i] << " ";
@@ -242,10 +241,40 @@ public:
         }
         return sum;
     }
-        static short avgOfArray(int arr[100], short length)
-{
-    short avg = sumOfArray(arr, length) / length;
-    return avg;
-}
-    
+    static short avgOfArray(int arr[100], short length)
+    {
+        short avg = sumOfArray(arr, length) / length;
+        return avg;
+    }
+    static void copyArray(int arr1[100],int arr2[100], short length)
+    {
+        for (short i = 0; i < length; i++)
+        {
+            arr2[i] = arr1[i];
+        }
+    }
+    static void copyPrimeNumberInArray(int arr1[100],int arr2[100], short lengthArr1,short & lengthArr2)
+    {
+        short counter = 0;
+        for (short i = 0; i < lengthArr1; i++)
+        {
+            
+                if(checkPrimeOrNot(arr1[i]) == enPrimeOrNot::Prime)
+                {
+                arr2[counter] = arr1[i];
+                counter++;
+                }
+            
+        }
+        lengthArr2 = counter;
+    }
+    static void sumOf2Array(int arr1[100],int arr2[100],int arr3[100], short length)
+    {
+        int sum = 0;
+        for (short i = 0; i < length; i++)
+        {
+            arr3[i] = arr2[i] + arr1[i];
+        }
+        
+    }
 };
