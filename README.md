@@ -10,7 +10,7 @@
 
 -with organizing code into libraries.
 
-Reusability.
+-Reusability.
 
   ## The goal of this course to improve your skills on problem solving and alogrithm.
   
