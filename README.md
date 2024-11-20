@@ -8,7 +8,7 @@
 
 -Divide and conquer by complex problems into manageable functions.
 
--with organizing code into libraries.
+-Organizing code into libraries.
 
 -Reusability.
 
